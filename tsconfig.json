@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["dom", "esnext"],
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["offscreencanvas", "stats.js", "webxr"]
+  },
+  "include": ["next-env.d.ts", "/*.ts", "/*.tsx"],
+  "exclude": ["node_modules"]
+}
